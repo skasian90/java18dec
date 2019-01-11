@@ -8,6 +8,7 @@ public class task2 {
     Scanner s= new Scanner(System.in);
     double a;
     a= s.nextDouble();
+    //nextDouble чтение дробного числа из консоли
 
         System.out.printf("%.4f", a);
 }}
