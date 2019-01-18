@@ -2,22 +2,19 @@ package лаб2;
 
 import java.util.Scanner;
 
-public class task33 {
+public class task35 {
     public static void main  (String[] args) {
         //обьявление данных
-        double a;
-        double b;
-        double cInDeg;
-        double cInRad;
+        double xDeg;
+        double xRad;
         double result;
         //получение данных
         Scanner s=new Scanner(System.in);
-        a= s.nextInt();
-        b= s.nextInt();
-        cInDeg= s.nextInt();
+        xDeg= s.nextInt();
         //вычисления
-        cInRad=cInDeg*Math.PI/180;
-        result = Math.sqrt((a*a)+(b*b)-2*a*b*Math.cos(cInRad));
+        xRad=xDeg*Math.PI/180;
+        result = Math.sqrt(1-Math.sin(xRad)*Math.sin(xRad));
         //вывод результата
         System.out.printf("%.4f",result);
-    }}
+    }
+}

@@ -14,8 +14,15 @@ public class task31 {
         a= s.nextInt();
         b= s.nextInt();
         c= s.nextInt();
+        //условие
+        if (a==0)  {
+            // вывод результата
+            System.out.printf("Уравнение y=0 x^2+%sx+%s не является квадратным", b, c);
+            return;//немедленное завершение программы
+        }
         //вычисления
         discriminant = (b*b)-(4*a*c);
         //вывод результата
-        System.out.println(discriminant);
+        System.out.printf("%.4f",discriminant);
     }}
+
