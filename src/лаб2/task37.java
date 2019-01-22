@@ -17,7 +17,7 @@ public class task37 {
             return;//немедленное завершение программы
         }
         //вычисления
-        R = (Math.sqrt(x+5))+(Math.sqrt(x-5))/(2*Math.sqrt(x));
+        R = (Math.sqrt(x+5)+Math.sqrt(x-5))/(2*Math.sqrt(x));
         //вывод результата
         System.out.printf("%.6f",R);
     }

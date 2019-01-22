@@ -6,6 +6,6 @@ public class task1 {
         System.out.printf("Значение пи: %.4f\n", Math.PI);
 
         System.out.println(Math.E);
-        System.out.printf("%.4f", Math.E);
+        System.out.printf("Значение е:  %.4f", Math.E);
     }
 }
