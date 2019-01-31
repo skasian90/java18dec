@@ -2,7 +2,7 @@ package лаб5;
 
 import java.util.Scanner;
 
-public class task16 {
+public class task19 {
     public static void main(String[] args) {
         //обьявление данных
         double X, Y, Z;

@@ -5,24 +5,32 @@ import java.util.Scanner;
 public class task13 {
     public static void main(String[] args) {
         //обьявление данных
-        double leftA, leftB, rightA, rightB;
+        double A;
+        double B;
+        double X;
+        double result;
         //получение данных
         Scanner s = new Scanner(System.in);
-        leftA = s.nextDouble();
-        leftB = s.nextDouble();
-        rightA = s.nextDouble();
-        rightB = s.nextDouble();
+        A = s.nextDouble();
+        B = s.nextDouble();
+        X = s.nextDouble();
 
+        if (A > B) {
+            // проверка данных
+            System.out.printf("Некорректный интервал. Левая граница должна быть меньше правой");
+        }
         //условие
-        if (leftB < rightA) {
-            if (leftB < rightB) {
-            } else {
-                System.out.println();
-            }
-        } else {
-            System.out.println("Не пересекаются");
+        if (X >= A && X <= B ) {
+            // вывод результата
+            System.out.printf(" "+X+" попадает в интервал от "+A+" до "+B+"");
+        }
+        if (X < A && X < B ) {
+            // вывод результата
+            System.out.printf(" "+X+" за пределами интервала от "+A+" до "+B+"");
+        }
+        if (X > A && X > B ) {
+            // вывод результата
+            System.out.printf(" "+X+" за пределами интервала от "+A+" до "+B+"");
+        }
 
-        }}}
-
-
-
+        }}

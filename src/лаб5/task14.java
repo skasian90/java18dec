@@ -5,23 +5,27 @@ import java.util.Scanner;
 public class task14 {
     public static void main(String[] args) {
         //обьявление данных
-        double X, Y, Z;
+        double X;
+
         //получение данных
         Scanner s = new Scanner(System.in);
         X = s.nextDouble();
-        Y = s.nextDouble();
-        Z = s.nextDouble();
+        //логика программы
+        if (X < -11 || X > 19 ) {
+            // вывод результата
+            System.out.printf("X не попадает ни в зеленый, ни в красный интервал");
+        }
+        if (X > -3 && X < 5 ) {
+            // вывод результата
+            System.out.printf("X не попадает ни в зеленый, ни в красный интервал");
+        }
+
         //условие
-        if (5 > X && X > -3) {
-            System.out.println(X);
+        if (X >= -11 && X <=-3) {
+            System.out.printf("Красный");
         }
-        if (5 > Y && Y > -3) {
-            System.out.println(Y);
+        if (X >= 5 && X <= 19 ) {
+            System.out.printf("Зеленый");
         }
-        if (5 > Z && Z > -3) {
-            System.out.println(Z);
-        }
-
-
 
     }}

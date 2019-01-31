@@ -5,32 +5,23 @@ import java.util.Scanner;
 public class task15 {
     public static void main(String[] args) {
         //обьявление данных
-        double A, B, C;
+        double X, Y, Z;
         //получение данных
         Scanner s = new Scanner(System.in);
-        A = s.nextDouble();
-        B = s.nextDouble();
-        C = s.nextDouble();
-
+        X = s.nextDouble();
+        Y = s.nextDouble();
+        Z = s.nextDouble();
         //условие
-        if (A < 0) {
-            // вывод результата
-            System.out.printf("Значение A должно быть неотрицательным");
-            return;//немедленное завершение программы
+        if (5 > X && X > -3) {
+            System.out.println(X);
         }
-        if (B < 0) {
-            // вывод результата
-            System.out.printf("Значение B должно быть неотрицательным");
-            return;//немедленное завершение программы
+        if (5 > Y && Y > -3) {
+            System.out.println(Y);
         }
-        if (C < 0) {
-            // вывод результата
-            System.out.printf("Значение C должно быть неотрицательным");
-            return;//немедленное завершение программы
+        if (5 > Z && Z > -3) {
+            System.out.println(Z);
         }
-        if (A == B || A == C || B==C) {
-            System.out.println("Треугольник является равнобедренным.");
-        } else {
-            System.out.println("Треугольник не является равнобедренным.");
-        }
-        }}
+
+
+
+    }}
