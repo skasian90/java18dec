@@ -18,7 +18,6 @@ public class task17new {
             System.out.printf("Некорректный интервал. Левая граница должна быть меньше правой.");
             return;//немедленное завершение программы
         }
-
         //логика программы
         if (redA < greenA && redA < greenB && redB > greenA && redB > greenB) {
             System.out.printf("не пересекаются");
