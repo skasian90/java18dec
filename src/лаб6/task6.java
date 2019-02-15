@@ -1,18 +1,21 @@
 package лаб6;
 
-import java.util.Scanner;
+        import java.util.Scanner;
 
 public class task6 {
     public static void main(String[] args) {
         //
         int X;
-        int result;
+        int n; // n - ограничение
         Scanner s=new Scanner(System.in);
         X = s.nextInt();
         int i; //счетчик шагов
-        i = 10;
+        i = 0;
+        n = 10;
 
-        while (X <= i ) {
-            result = X + 3;}
-        System.out.println(result);
-    }}
+        while (i <= n ) {
+            System.out.print(" ");
+            System.out.print(X);
+            i = i + 1;
+            X = X + 3;
+        }}}

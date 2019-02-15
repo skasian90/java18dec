@@ -19,6 +19,6 @@ public class task17new {
             return;//немедленное завершение программы
         }
         //логика программы
-        if (redA < greenA && redA < greenB && redB > greenA && redB > greenB) {
+        if (redA < greenA && redA < greenB && redB < greenA && redB < greenB) {
             System.out.printf("не пересекаются");
         }}}

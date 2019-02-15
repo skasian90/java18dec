@@ -18,10 +18,10 @@ public class task16 {
             System.out.printf("Некорректный интервал. Левая граница должна быть меньше правой");
             return;//немедленное завершение программы
         }
-        if (redA/2 + redB/2 < greenA/2 + greenB/2) {
+        if ((redA + redB)/2 < (greenA + greenB)/2) {
             System.out.printf("Красный слева, зеленый справа");
         }
-        if ((redA/2 + redB/2) == (greenA/2 + greenB/2)) {
+        if ((redA + redB)/2 == (greenA + greenB)/2) {
             System.out.printf("Середины интервалов совпадают");
         }
         if (redA + redB > greenA + greenB) {
