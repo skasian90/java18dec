@@ -14,11 +14,14 @@ public class task17new {
         greenB = s.nextDouble();
 
         //условие
-        if (redA > redB || greenA > greenB) {
+        if (redA > redB || greenA > greenB ) {
             System.out.printf("Некорректный интервал. Левая граница должна быть меньше правой.");
             return;//немедленное завершение программы
         }
         //логика программы
-        if (redA < greenA && redA < greenB && redB < greenA && redB < greenB) {
-            System.out.printf("не пересекаются");
+        if (redA < greenA && redB < greenA && greenA < redA && greenB < redA ) {
+            System.out.printf("Не пересекаются");
+
+        } else {
+            System.out.println("Пересекаются");
         }}}
