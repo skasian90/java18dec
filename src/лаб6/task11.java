@@ -7,10 +7,12 @@ public class task11 {
         Scanner s = new Scanner(System.in);
         int A = s.nextInt();// ограничение
         int B = s.nextInt();// счетчик
-        int i; // количество строк
-        int n; // n - ограничение шагов
+        int i; // ограничение левого и правого столбца
+        int S; // счетик строк
 
-        i = 0;
+
+
+
 
 
         if (A == B) {
@@ -22,18 +24,23 @@ public class task11 {
         }
         if ( A > B ) {
             System.out.println();
-            while (A > B) {
+            i = A;
+            S = A - B + 1;
+            while (B <= i) {
                 System.out.print(A);
-                B = B + 1;
                 System.out.print(" ");
                 A = A - 1;
                 System.out.print(B);
+                B = B + 1;
                 System.out.println();
             }
-            System.out.print("Всего строк ");
+            System.out.print("Всего строк " + S + "");
 
         } else {
-            while (A < B) {
+            i = B;
+            S = B - A + 1;
+            while (A <= i) {
+
                 System.out.print(A);
                 A = A + 1;
                 System.out.print(" ");
@@ -41,5 +48,5 @@ public class task11 {
                 B = B - 1;
                 System.out.println();
             }
-            System.out.print("Всего строк ");
+            System.out.print("Всего строк  "+ S +"");
         }}}
