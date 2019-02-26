@@ -19,7 +19,8 @@ public class task16 {
                 System.out.print(i);
                 System.out.println("+");
             } else {
-                System.out.println(i);
+                System.out.print(i);
+                System.out.println("-");
             }
             i = i + 1; //увеличение счетчика
 
