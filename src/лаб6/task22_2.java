@@ -1,0 +1,42 @@
+package лаб6;
+
+import java.util.Scanner;
+
+/**
+ * Created by adm on 26.02.2019.
+ */
+public class task22_2 {
+    public static void main(String[] args) {
+        //
+        int i;//счетчик цифр в строке
+        i = 1;
+        int n;
+        n = 9;//счетчик строк
+        int W;//ограничение цифр в строке
+        Scanner s = new Scanner(System.in);
+        W = s.nextInt();
+        int S;//ограничение по строкам
+        S = 9;
+
+
+
+        if (W < 0) {
+            System.out.print("Значение W должно быть в интервале [0, 20]");
+            return;
+        }
+        if (W > 20) {
+            System.out.print("Значение W должно быть в интервале [0, 20]");
+            return;
+        }
+
+        while (i <= W) {
+            System.out.print("1");
+            i = i + 1;
+
+        }
+
+        System.out.println();
+        i = i - W;
+
+
+}}
