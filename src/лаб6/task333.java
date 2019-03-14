@@ -7,14 +7,36 @@ public class task333 {
         Scanner s = new Scanner(System.in);
         int A = s.nextInt();// число вводимое пользователем
         int B = s.nextInt();// число вводимое пользователем
+        int n;
+        n = A;
 
+        if (A < B) {
             while (A <= B) {
                 System.out.print(A);
                 A = A + 1;
             }
-            A = A - B;
+        } else {
+            while (A >= B) {
+                System.out.print(A);
+                A = A - 1;
+
+            }
+
+        }
+        A = A - B;
         System.out.println();
-            while ( B >= A ) {
+        if (B > n) {
+            while (B >= n) {
                 System.out.print(B);
                 B = B - 1;
-            }}}
+            }
+        } else {
+            while (B <= n) {
+                System.out.print(B);
+                B = B + 1;
+            }
+
+
+        }
+    }
+}
