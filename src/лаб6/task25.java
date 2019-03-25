@@ -2,15 +2,15 @@ package лаб6;
 
 import java.util.Scanner;
 
-public class task23 {
+public class task25 {
     public static void main(String[] args) {
         //
 
         Scanner s = new Scanner(System.in);
 
-        int W;// ширина прямоугольника
-        W = s.nextInt();
-        int H;// высота прямоугольника
+
+
+        int H;// высота лесенки
         H = s.nextInt();
         int i;//счетчик символов в строке
         i = 0;
@@ -18,10 +18,6 @@ public class task23 {
         n = 0;
 
 
-        if (W < 0) {
-            System.out.print("Значение W должно быть неотрицательно");
-            return;
-        }
         if (H < 0) {
             System.out.print("Значение H должно быть неотрицательно");
             return;
@@ -30,13 +26,12 @@ public class task23 {
 
         while (n < H) {
 
-            while (i < W) {
-                System.out.print("#");
+            while (i < H) {
+                System.out.println("#");
                 i = i + 1;
             }
             System.out.println();
             n = n + 1;
-            i = 0;
         }
 
     }}
