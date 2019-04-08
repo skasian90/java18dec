@@ -2,7 +2,7 @@ package лаб6;
 
 import java.util.Scanner;
 
-public class task24 {
+public class task27 {
     public static void main(String[] args) {
         //
 
@@ -25,34 +25,18 @@ public class task24 {
             System.out.print("Значение H должно быть неотрицательно");
             return;
         }
-
-        System.out.print(" ");//Один раз перед циклом
-        while (i < W ) {
-            System.out.print(i);
+        while (i < W) {
             i = i + 1;
-            }
+            System.out.print("+");
+        }
+        System.out.println();
+        i = 0;
+        while (i < W) {
+            i = i + 1;
+            System.out.print("+");
+        }
         System.out.println();
         i = 0;
 
-        while (n < H) {
-            System.out.print(n);
-            n = n + 1;
 
-            i = 0;
-            while (i < W ) {
-                System.out.print(".");
-                i = i + 1;
-            }
-            System.out.print("|");
-            System.out.println();
-        }
-        i = 0;
-        System.out.print(" ");
-        while (i < W ) {
-            i = i + 1;
-            System.out.print("-");
-
-        }
-
-
-}}
+    }}
