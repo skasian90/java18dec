@@ -14,12 +14,11 @@ public class task8 {
         String[] arr = data.split(" ");
 
         t = arr[5];
-        arr[0] = t;
-
-        arr[3] = arr[2];
-        arr[2] = arr[1];
-        arr[1] = arr[0];
-        arr[0] = arr[5];
+        arr[1] = arr[2];
+        arr[2] = arr[3];
+        arr[3] = arr[4];
+        arr[4] = arr[5];
+        arr[5] = t;
 
 
         while (a < arr.length) {
