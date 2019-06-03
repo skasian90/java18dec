@@ -9,27 +9,25 @@ public class task12 {
 
         String data = s.nextLine();
         int M = s.nextInt();
-        int t = 9;
+        int t = 0;
 
         String[] arr = data.split(" ");
 
+        int[]num = new int[arr.length]; // подготавливаем массив для сохранения значений от пользователя в виде чисел
+// во вторых кв скобках пишем размер нового массива
 
-        int n = arr.length;
-        int[]num = new int[n];
-        num[0] = Integer.parseInt(arr[0]);
-        num[1] = Integer.parseInt(arr[1]);
-
-
-
-
-        while (t >= 4) {
-
-            arr[t] = (arr[t - 1]);
-            t = t - 1;
+        while (t < arr.length) {
+            num[t] = Integer.parseInt(arr[t]);
+            t = t + 1;
         }
 
+        t = 0;
 
 
-        System.out.println(num[t] * M);
+        while (t < arr.length) {
+            System.out.print(num[t] * M);
+            t = t + 1;
+            System.out.print(" ");
+        }
         }
     }
