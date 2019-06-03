@@ -9,6 +9,7 @@ public class task12 {
 
         String data = s.nextLine();
         int M = s.nextInt();
+        int t = 9;
 
         String[] arr = data.split(" ");
 
@@ -18,8 +19,17 @@ public class task12 {
         num[0] = Integer.parseInt(arr[0]);
         num[1] = Integer.parseInt(arr[1]);
 
-        System.out.println(num[0] * M);
-        System.out.println(num[1] * M);
 
+
+
+        while (t >= 4) {
+
+            arr[t] = (arr[t - 1]);
+            t = t - 1;
+        }
+
+
+
+        System.out.println(num[t] * M);
         }
     }
